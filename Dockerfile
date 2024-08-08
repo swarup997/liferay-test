@@ -4,7 +4,7 @@ ENV CATALINA_HOME=$LIFERAY_HOME/tomcat
 ENV PATH=$CATALINA_HOME/bin:$PATH
 WORKDIR $LIFERAY_HOME
  
-COPY /opt/config/portal-ext.properties $LIFERAY_HOME/
+COPY /var/lib/jenkins/config/portal-ext.properties $LIFERAY_HOME/
  
 EXPOSE 8080 11311
  
