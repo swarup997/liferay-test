@@ -13,4 +13,4 @@ jobs:
 
     steps:
       - name: Print Hello World with Branch
-        run: echo "Hello World ${{ github.ref_name }}"
+        run: echo "Hello World ${{ github.ref_name }} test successful"
