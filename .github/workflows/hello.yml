@@ -1,0 +1,16 @@
+name: Hello World Branch
+
+on:
+  push:
+    branches:
+      - "**"   # runs on all branches
+
+  workflow_dispatch:   # manual trigger
+
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print Hello World with Branch
+        run: echo "Hello World ${{ github.ref_name }}"
