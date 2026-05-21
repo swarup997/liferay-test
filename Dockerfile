@@ -8,5 +8,5 @@ COPY portal-ext.properties $LIFERAY_HOME/
  
 EXPOSE 8080 11311
  
- 
+#test
 CMD ["/opt/liferay/tomcat/bin/catalina.sh", "run"]
